@@ -1,28 +1,22 @@
 # Aleksey Gurban
 
-## Junior Frontend Developer
+### Junior Frontend Developer
 
----
-
-## Contact information
+### Contact information
 
 **E-mail:** aleksey_@tut.by
 
----
+### About me
 
-## About me
+I learn front-end development in RS School
 
----
-
-## Skills
+### Skills
 
 -  HTML/CSS
 -  JavaScript (Basic)
 -  Git
 
----
-
-## Code Example
+### Code Example
 
 ```
 function solution(number){
@@ -44,12 +38,17 @@ function solution(number){
 }
 ```
 
----
+### Experience
 
-## Experience
+### Education
 
----
+-  **University:** Belarussion National Technical University, concrete technology and building materials
+-  **Courses:**
+   -  CS 50 lectures
 
-## Education
+### Languages
 
-## Languages
+-  Russian
+-  Belarussian
+-  Polish (A1)
+-  English (A1)
