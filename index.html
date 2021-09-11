@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <title>Aleksey Gurban CV</title>
+   </head>
+   <body>
+      <div class="container">
+         <div class="wrapper">
+            <div class="wrapper_left">
+               <div class="avatar">
+                  <img class="avatar_img" src="avatar.jpg" alt="avatar" />
+               </div>
+
+               <div class="contact">
+                  <h2>Contact</h2>
+                  <div class="content_left">
+                     <div class="contact_subtitle">Email</div>
+                     <a class="contacts-link" href="mailto:aleksey_@tut.by"
+                        >aleksey_@tut.by</a
+                     >
+                     <div class="contact_subtitle">Address</div>
+                     <p>Minsk, Belarus</p>
+                  </div>
+               </div>
+
+               <div class="education">
+                  <h2>Education</h2>
+                  <div class="content_left">
+                     <ul>
+                        <li>
+                           <p class="education_year">2011 - 2016</p>
+                           <p>Concrete technology and building material</p>
+                           <p class="education_university">
+                              Belarussion National Technical University
+                           </p>
+                        </li>
+                        <li>
+                           <p class="education_year">2021</p>
+                           <p class="education_university">CS50 lectures</p>
+                        </li>
+                        <li>
+                           <p class="education_year">2021</p>
+                           <p class="education_university">RS School</p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="skills">
+                  <h2>Skills</h2>
+                  <div class="content_left">
+                     <ul>
+                        <li>HTML/CSS</li>
+                        <li>JavaScript (Basic)</li>
+                        <li>Git</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="wrapper_right">
+               <header class="header">
+                  <div class="name">
+                     <h1>
+                        Aleksey <br />
+                        Gurban
+                     </h1>
+                  </div>
+                  <div class="prof"><h3>future front-end developer</h3></div>
+               </header>
+               <main>
+                  <div class="profile">
+                     <h2>Profile</h2>
+                     <div class="content_right">
+                        <div>I learn front-end development in RS School</div>
+                     </div>
+                  </div>
+
+                  <div class="experience">
+                     <h2>Experience</h2>
+                     <div class="content_right"></div>
+                  </div>
+
+                  <div class="code-example">
+                     <h2>Code Example</h2>
+                     <div class="content_right">
+                        <pre>
+<code>
+   function isIsogram(str){
+      str = str.toUpperCase()
+      let array = str.split('')
+      let setArray = [...new Set(array)]
+        if (array.length != setArray.length) {
+          return false
+        }
+      return true
+    }
+</code>
+
+                   </pre>
+                     </div>
+                  </div>
+
+                  <div class="languages">
+                     <h2>Languages</h2>
+                     <div class="content_right">
+                        <ul>
+                           <li>Russian</li>
+                           <li>Belarussian</li>
+                           <li>Polish (A1)</li>
+                           <li>English (A1)</li>
+                        </ul>
+                     </div>
+                  </div>
+               </main>
+            </div>
+         </div>
+         <footer class="footer">
+            <div>
+               <a
+                  class="my-github"
+                  href="https://github.com/alexiStalin"
+                  target="_blank"
+               >
+                  <img
+                     class="github_icon"
+                     src="https://img.flaticon.com/icons/png/512/25/25231.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"
+                     alt="github_icon"
+                     style="width: 40px"
+                  />
+                  <p>Visit my GitHub</p>
+               </a>
+            </div>
+            <div class="date">
+               <p>Created in 2021</p>
+            </div>
+            <div>
+               <a href="https://rs.school/js/" target="_blank">
+                  <img
+                     src="https://rs.school/images/rs_school_js.svg"
+                     alt="rs-school-logo"
+                     style="width: 100px"
+                  />
+               </a>
+            </div>
+         </footer>
+      </div>
+   </body>
+</html>
