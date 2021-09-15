@@ -4,61 +4,151 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="style.css" />
+      <link
+         rel="stylesheet"
+         href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/darkula.min.css"
+      />
       <title>Aleksey Gurban CV</title>
    </head>
    <body>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+      <script>
+         hljs.initHighlightingOnLoad()
+      </script>
+
       <div class="container">
+         <div class="nav_burger_none">
+            <div class="nav_burger">
+               <input type="checkbox" id="check-menu" />
+               <label for="check-menu">MENU</label>
+               <div class="burger-line one"></div>
+               <div class="burger-line two"></div>
+               <div class="burger-line three"></div>
+               <div class="burger-line four"></div>
+               <nav class="main-menu">
+                  <a href="#contact">Contact</a>
+                  <a href="#education">Education</a>
+                  <a href="#skills">Skills</a>
+                  <a href="#profile"> Profile</a>
+                  <a href="#experience">Experience </a>
+                  <a href="#code-example">Code-example</a>
+                  <a href="#languages">Languages</a>
+                  <a href="#my_project">My project</a>
+               </nav>
+            </div>
+         </div>
+
+         <nav class="nav">
+            <div>
+               <a href="#contact">
+                  <div>Contact</div>
+               </a>
+            </div>
+            <div>
+               <a href="#education">
+                  <div>Education</div>
+               </a>
+            </div>
+            <div>
+               <a href="#skills">
+                  <div>Skills</div>
+               </a>
+            </div>
+            <a href="#profile">
+               <div>Profile</div>
+            </a>
+            <div>
+               <a href="#experience">
+                  <div>Experience</div>
+               </a>
+            </div>
+            <div>
+               <a href="#code-example">
+                  <div>Code-example</div>
+               </a>
+            </div>
+            <div>
+               <a href="#languages">
+                  <div>Languages</div>
+               </a>
+            </div>
+            <div>
+               <a href="#my_project">
+                  <div>My project</div>
+               </a>
+            </div>
+         </nav>
+
          <div class="wrapper">
             <div class="wrapper_left">
-               <div class="avatar">
-                  <img class="avatar_img" src="avatar.jpg" alt="avatar" />
-               </div>
-
-               <div class="contact">
-                  <h2>Contact</h2>
-                  <div class="content_left">
-                     <div class="contact_subtitle">Email</div>
-                     <a class="contacts-link" href="mailto:aleksey_@tut.by"
-                        >aleksey_@tut.by</a
-                     >
-                     <div class="contact_subtitle">Address</div>
-                     <p>Minsk, Belarus</p>
+               <aside>
+                  <div class="avatar">
+                     <img class="avatar_img" src="avatar.jpg" alt="avatar" />
                   </div>
-               </div>
-
-               <div class="education">
-                  <h2>Education</h2>
-                  <div class="content_left">
-                     <ul>
-                        <li>
-                           <p class="education_year">2011 - 2016</p>
-                           <p>Concrete technology and building material</p>
-                           <p class="education_university">
-                              Belarussion National Technical University
-                           </p>
-                        </li>
-                        <li>
-                           <p class="education_year">2021</p>
-                           <p class="education_university">CS50 lectures</p>
-                        </li>
-                        <li>
-                           <p class="education_year">2021</p>
-                           <p class="education_university">RS School</p>
-                        </li>
-                     </ul>
+                  <div class="name_none">
+                     <div class="name">
+                        <h4>
+                           Aleksey <br />
+                           Gurban
+                        </h4>
+                     </div>
+                     <div class="prof"><h3>front-end developer</h3></div>
                   </div>
-               </div>
 
-               <div class="skills">
-                  <h2>Skills</h2>
-                  <div class="content_left">
-                     <ul>
-                        <li>HTML/CSS</li>
-                        <li>JavaScript (Basic)</li>
-                        <li>Git</li>
-                     </ul>
+                  <div id="contact" class="contact">
+                     <h2>Contact</h2>
+                     <div class="content_left">
+                        <ul>
+                           <li>
+                              <h3 class="contact_subtitle">Email</h3>
+                              <a
+                                 class="contacts-link"
+                                 href="mailto:aleksey_@tut.by"
+                                 >aleksey_@tut.by</a
+                              >
+                           </li>
+                           <li>
+                              <h3 class="contact_subtitle">Address</h3>
+                              <p>Minsk, Belarus</p>
+                           </li>
+                        </ul>
+                     </div>
                   </div>
-               </div>
+
+                  <section id="education" class="education">
+                     <h2>Education</h2>
+                     <div class="content_left">
+                        <ul>
+                           <li>
+                              <p class="education_year">2011 - 2016</p>
+                              <p>Concrete technology and building material</p>
+                              <p class="education_university">
+                                 Belarussion National Technical University
+                              </p>
+                           </li>
+                           <li>
+                              <p class="education_year">2021</p>
+                              <p class="education_university">CS50 lectures</p>
+                           </li>
+                           <li>
+                              <p class="education_year">2021</p>
+                              <p class="education_university">RS School</p>
+                           </li>
+                        </ul>
+                     </div>
+                  </section>
+
+                  <div id="skills" class="skills">
+                     <h2>Skills</h2>
+                     <div class="content_left">
+                        <ul>
+                           <li>HTML/CSS</li>
+                           <li>JavaScript (Basic)</li>
+                           <li>Git</li>
+                        </ul>
+                     </div>
+                  </div>
+               </aside>
             </div>
             <div class="wrapper_right">
                <header class="header">
@@ -68,26 +158,30 @@
                         Gurban
                      </h1>
                   </div>
-                  <div class="prof"><h3>future front-end developer</h3></div>
+                  <div class="prof"><h3>front-end developer</h3></div>
                </header>
                <main>
-                  <div class="profile">
+                  <div id="profile" class="profile">
                      <h2>Profile</h2>
                      <div class="content_right">
-                        <div>I learn front-end development in RS School</div>
+                        I learn front-end development in RS School. I want to
+                        learn JavaScript and to get the Frontend-job next year.
                      </div>
                   </div>
 
-                  <div class="experience">
+                  <div id="experience" class="experience">
                      <h2>Experience</h2>
-                     <div class="content_right"></div>
+                     <div class="content_right">
+                        I don't have experience as a programmer, but at
+                        university we studied Fortran.
+                     </div>
                   </div>
 
-                  <div class="code-example">
+                  <div id="code-example" class="code-example">
                      <h2>Code Example</h2>
                      <div class="content_right">
                         <pre>
-<code>
+<code style="background-color: white;">
    function isIsogram(str){
       str = str.toUpperCase()
       let array = str.split('')
@@ -103,7 +197,7 @@
                      </div>
                   </div>
 
-                  <div class="languages">
+                  <div id="languages" class="languages">
                      <h2>Languages</h2>
                      <div class="content_right">
                         <ul>
@@ -112,6 +206,28 @@
                            <li>Polish (A1)</li>
                            <li>English (A1)</li>
                         </ul>
+                     </div>
+                  </div>
+
+                  <div id="my_project" class="my_project">
+                     <h2>My project</h2>
+                     <div class="content_right"></div>
+                     <div class="my_project_background">
+                        <a
+                           class="my_project_link"
+                           href="https://alexistalin.github.io/rsschool-cv/"
+                           target="_blank"
+                        >
+                           <img
+                              class="my_project_img"
+                              src="project1.png"
+                              alt=""
+                           />
+                           <h5 class="my_project_name">CV</h5>
+                           <p class="my_project_description">
+                              This is my first project. I use HTML and CSS.
+                           </p>
+                        </a>
                      </div>
                   </div>
                </main>
